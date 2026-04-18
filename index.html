@@ -1,231 +1,210 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lumix OS | Arch-Based Evolution</title>
+    <meta name="description" content="Lumix OS - Arch and Debian based minimalist Linux distributions.">
+    <title>Lumix OS | Arch & Debian Based</title>
     <style>
         :root {
             --bg-color: #080808;
-            --card-bg: rgba(15, 15, 15, 0.7);
+            --card-bg: rgba(15, 15, 15, 0.78);
             --text-main: #ffffff;
-            --text-dim: #999999;
+            --text-dim: #aaaaaa;
             --lumix-purple: #9d4edd;
             --lumix-orange: #ff9100;
-            --border-color: rgba(255, 255, 255, 0.1);
+            --border-color: rgba(255, 255, 255, 0.09);
         }
-
+        
         * { box-sizing: border-box; }
-
+        
         body {
             margin: 0;
             padding: 0;
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
             background-color: var(--bg-color);
-            background-image:
-                radial-gradient(circle at 20% 30%, rgba(157, 78, 221, 0.1) 0%, transparent 40%),
-                radial-gradient(circle at 80% 70%, rgba(255, 145, 0, 0.08) 0%, transparent 40%);
+            background-image: 
+                radial-gradient(circle at 25% 25%, rgba(157, 78, 221, 0.11) 0%, transparent 45%),
+                radial-gradient(circle at 75% 75%, rgba(255, 145, 0, 0.09) 0%, transparent 45%);
             color: var(--text-main);
             display: flex;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            line-height: 1.6;
+            text-align: center;
         }
-
+        
         .container {
             width: 100%;
-            max-width: 750px;
-            margin: 20px;
-            padding: 40px;
+            max-width: 720px;
+            margin: 24px;
+            padding: 52px 40px;
             background: var(--card-bg);
             border: 1px solid var(--border-color);
-            border-radius: 28px;
-            backdrop-filter: blur(20px);
+            border-radius: 36px;
+            backdrop-filter: blur(28px);
+            box-shadow: 0 40px 80px rgba(0, 0, 0, 0.9);
             display: flex;
             flex-direction: column;
             align-items: center;
-            box-shadow: 0 30px 60px rgba(0,0,0,0.8);
         }
-
+        
         .logo {
-            width: 120px;
+            width: 138px;
             height: auto;
-            margin-bottom: 25px;
-            filter: drop-shadow(0 0 20px rgba(157, 78, 221, 0.3));
-            transition: all 0.5s ease;
+            margin-bottom: 28px;
+            filter: drop-shadow(0 0 30px rgba(157, 78, 221, 0.45));
+            transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
         }
-
+        
         .logo:hover {
-            transform: translateY(-5px);
-            filter: drop-shadow(0 0 30px rgba(255, 145, 0, 0.4));
+            transform: scale(1.07) translateY(-8px);
+            filter: drop-shadow(0 0 40px rgba(255, 145, 0, 0.55));
         }
-
+        
         .status-badge {
-            display: flex;
+            display: inline-flex;
             align-items: center;
-            gap: 8px;
-            background: rgba(255, 255, 255, 0.05);
-            padding: 6px 14px;
-            border-radius: 100px;
-            border: 1px solid rgba(255, 145, 0, 0.4);
+            gap: 9px;
+            background: rgba(255, 145, 0, 0.08);
+            padding: 8px 20px;
+            border-radius: 9999px;
+            border: 1px solid rgba(255, 145, 0, 0.6);
             color: var(--lumix-orange);
-            font-size: 0.7rem;
+            font-size: 0.73rem;
             font-weight: 800;
             text-transform: uppercase;
-            letter-spacing: 1.5px;
-            margin-bottom: 20px;
+            letter-spacing: 2px;
+            margin-bottom: 24px;
         }
-
+        
         .pulse {
-            width: 6px;
-            height: 6px;
+            width: 8px;
+            height: 8px;
             background-color: var(--lumix-orange);
             border-radius: 50%;
-            box-shadow: 0 0 0 rgba(255, 145, 0, 0.4);
-            animation: pulse-animation 2s infinite;
+            animation: pulse-animation 2.3s infinite;
         }
-
+        
         @keyframes pulse-animation {
-            0% { box-shadow: 0 0 0 0px rgba(255, 145, 0, 0.7); }
-            70% { box-shadow: 0 0 0 10px rgba(255, 145, 0, 0); }
-            100% { box-shadow: 0 0 0 0px rgba(255, 145, 0, 0); }
+            0%   { box-shadow: 0 0 0 0 rgba(255, 145, 0, 0.8); }
+            70%  { box-shadow: 0 0 0 15px rgba(255, 145, 0, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(255, 145, 0, 0); }
         }
-
+        
         h1 {
-            font-size: 3.5rem;
-            margin: 0;
-            background: linear-gradient(135deg, #fff 30%, var(--lumix-purple) 70%, var(--lumix-orange) 100%);
+            font-size: 3.85rem;
+            font-weight: 900;
+            letter-spacing: -3px;
+            margin: 0 0 14px;
+            background: linear-gradient(135deg, #ffffff 20%, var(--lumix-purple) 65%, var(--lumix-orange) 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            font-weight: 900;
         }
-
+        
         .tagline {
+            font-size: 1.22rem;
             color: var(--text-dim);
-            font-size: 1.1rem;
-            margin-top: 10px;
-            margin-bottom: 40px;
+            margin-bottom: 32px;
+            max-width: 520px;
         }
-
-        .content-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 30px;
-            width: 100%;
-            text-align: left;
-            padding: 30px 0;
-            border-top: 1px solid var(--border-color);
+        
+        .description {
+            font-size: 1.05rem;
+            color: #cccccc;
+            max-width: 540px;
+            margin-bottom: 48px;
+            line-height: 1.75;
         }
-
-        .lang-block h3 {
-            color: var(--lumix-purple);
-            margin-top: 0;
-            font-size: 0.9rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        .lang-block p {
-            font-size: 0.95rem;
-            color: #bbb;
-            margin: 0;
-        }
-
+        
         .btn-group {
             display: flex;
-            gap: 15px;
-            margin-top: 40px;
-            width: 100%;
+            flex-wrap: wrap;
+            gap: 18px;
             justify-content: center;
+            width: 100%;
+            max-width: 480px;
         }
-
+        
         .btn {
             text-decoration: none;
-            padding: 14px 30px;
-            border-radius: 14px;
-            font-size: 0.9rem;
+            padding: 16px 36px;
+            border-radius: 18px;
+            font-size: 1rem;
             font-weight: 700;
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
             display: flex;
             align-items: center;
             gap: 10px;
-            border: 1px solid transparent;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
         }
-
+        
         .btn-gh {
             background: #ffffff;
-            color: #000;
+            color: #111;
         }
-
+        
         .btn-cb {
-            background: transparent;
+            background: rgba(33, 133, 208, 0.12);
             color: #fff;
-            border-color: rgba(33, 133, 208, 0.5);
-            background: rgba(33, 133, 208, 0.1);
+            border-color: rgba(33, 133, 208, 0.55);
         }
-
-        .btn:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+        
+        .btn-dl {
+            background: #222;
+            color: #777;
+            cursor: not-allowed;
+            border: 1px solid #444;
         }
-
-        .btn-gh:hover {
-            box-shadow: 0 0 20px rgba(255,255,255,0.2);
-        }
-
+        
         footer {
-            margin-top: 50px;
-            font-size: 0.7rem;
-            color: #444;
+            margin-top: 60px;
+            font-size: 0.72rem;
+            color: #555;
             text-transform: uppercase;
-            letter-spacing: 2px;
+            letter-spacing: 2.5px;
         }
-
-        @media (max-width: 650px) {
-            .content-grid { grid-template-columns: 1fr; }
-            h1 { font-size: 2.5rem; }
-            .container { padding: 30px 20px; }
+        
+        @media (max-width: 640px) {
+            h1 { font-size: 2.95rem; letter-spacing: -2px; }
+            .container { padding: 40px 24px; }
+            .logo { width: 118px; }
         }
     </style>
 </head>
 <body>
-
     <div class="container">
-        <img src="lumix.png" alt="Lumix Logo" class="logo">
-
+        <img src="lumix.png" alt="Lumix OS Logo" class="logo">
+        
         <div class="status-badge">
             <span class="pulse"></span>
-            Development Stage
+            EARLY DEVELOPMENT
         </div>
-
+        
         <h1>Lumix OS</h1>
-        <p class="tagline">Arch Linux’un ruhu, senin tarzın.</p>
-
-        <div class="content-grid">
-            <div class="lang-block">
-                <h3>English</h3>
-                <p>A minimalist, high-performance rolling release distribution based on Arch Linux. Tailored for absolute control and daily stability.</p>
-            </div>
-            <div class="lang-block">
-                <h3>Türkçe</h3>
-                <p>Arch Linux tabanlı, minimalist ve yüksek performanslı bir dağıtım. Tam kontrol ve günlük kullanım stabilitesi için tasarlandı.</p>
-            </div>
-        </div>
-
+        <p class="tagline">Two philosophies. One experience.</p>
+        
+        <p class="description">
+            We are currently in the very early stages of development.<br><br>
+            Lumix OS will be available in two editions:<br>
+            <strong>Arch-based</strong> (rolling release) and <strong>Debian-based</strong> (stable base).<br><br>
+            The first ISO images are not yet released. Stay tuned.
+        </p>
+        
         <div class="btn-group">
             <a href="https://github.com/CureDevs/Lumix-Os" target="_blank" class="btn btn-gh">
-                <span>GitHub Mirror</span>
+                GitHub Mirror
             </a>
             <a href="https://codeberg.org/CureDev/Lumix-Os" target="_blank" class="btn btn-cb">
-                <span>Codeberg</span>
+                Codeberg
+            </a>
+            <a href="#" class="btn btn-dl">
+                ISO Coming Soon
             </a>
         </div>
-
+        
         <footer>
-            CureDevs &bull; GNU GPL v3.0 &bull; 2026
+            CureDevs • GNU GPL v3.0 • 2026
         </footer>
     </div>
-
 </body>
 </html>
