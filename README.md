@@ -8,11 +8,11 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/Newqure/Lumix-Os">
-    <img src="https://img.shields.io/badge/GitHub-Newqure/Lumix--Os-181717?logo=github&logoColor=white" alt="GitHub">
+  <a href="https://github.com/CureDevs/Lumix-Os">
+    <img src="https://img.shields.io/badge/GitHub-CureDevs/Lumix--Os-181717?logo=github&logoColor=white" alt="GitHub">
   </a>
-  <a href="https://codeberg.org/CureDev/Lumix_Os">
-    <img src="https://img.shields.io/badge/Codeberg-CureDev/Lumix__Os-2185D0?logo=codeberg&logoColor=white" alt="Codeberg">
+  <a href="https://codeberg.org/CureDevs/Lumix-Os">
+    <img src="https://img.shields.io/badge/Codeberg-CureDevs/Lumix--Os-2185D0?logo=codeberg&logoColor=white" alt="Codeberg">
   </a>
   <img src="https://img.shields.io/badge/Arch%20Linux-1793D1?logo=archlinux&logoColor=white" alt="Arch Linux">
   <img src="https://img.shields.io/badge/License-GPLv3-blue.svg" alt="License">
@@ -41,8 +41,8 @@ Kendi günlük kullanımım için özel olarak geliştiriyorum.
 ---
 
 **Mirrors / Aynalar**  
-[![GitHub](https://img.shields.io/badge/GitHub-Newqure/Lumix--Os-181717?logo=github&logoColor=white)](https://github.com/Newqure/Lumix-Os)  
-[![Codeberg](https://img.shields.io/badge/Codeberg-CureDev/Lumix__Os-2185D0?logo=codeberg&logoColor=white)](https://codeberg.org/CureDev/Lumix_Os)
+[![GitHub](https://img.shields.io/badge/GitHub-CureDevs/Lumix--Os-181717?logo=github&logoColor=white)](https://github.com/CureDevs/Lumix-Os)  
+[![Codeberg](https://img.shields.io/badge/Codeberg-CureDevs/Lumix--Os-2185D0?logo=codeberg&logoColor=white)](https://codeberg.org/CureDevs/Lumix_Os)
 
 **License / Lisans**  
 GNU General Public License v3.0
