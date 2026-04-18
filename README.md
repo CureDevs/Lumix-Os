@@ -40,6 +40,9 @@ Kendi günlük kullanımım için özel olarak geliştiriyorum.
 
 ---
 
+**Website**  
+[https://curedevs.github.io/Lumix-Os/](https://curedevs.github.io/Lumix-Os/)
+
 **Mirrors / Aynalar**  
 [![GitHub](https://img.shields.io/badge/GitHub-CureDevs/Lumix--Os-181717?logo=github&logoColor=white)](https://github.com/CureDevs/Lumix-Os)  
 [![Codeberg](https://img.shields.io/badge/Codeberg-CureDevs/Lumix--Os-2185D0?logo=codeberg&logoColor=white)](https://codeberg.org/CureDevs/Lumix_Os)
