@@ -8,14 +8,10 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/CureDevs/Lumix-Os">
-    <img src="https://img.shields.io/badge/GitHub-CureDevs/Lumix--Os-181717?logo=github&logoColor=white" alt="GitHub">
-  </a>
-  <a href="https://codeberg.org/CureDevs/Lumix-Os">
-    <img src="https://img.shields.io/badge/Codeberg-CureDevs/Lumix--Os-2185D0?logo=codeberg&logoColor=white" alt="Codeberg">
-  </a>
-  <img src="https://img.shields.io/badge/Arch%20Linux-1793D1?logo=archlinux&logoColor=white" alt="Arch Linux">
-  <img src="https://img.shields.io/badge/License-GPLv3-blue.svg" alt="License">
+<img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white" alt="GitHub">
+<img src="https://img.shields.io/badge/Codeberg-2185D0?logo=codeberg&logoColor=white" alt="Codeberg">
+<img src="https://img.shields.io/badge/Arch%20Linux-1793D1?logo=archlinux&logoColor=white" alt="Arch Linux">
+<img src="https://img.shields.io/badge/License-GPLv3-blue.svg" alt="License">
 </p>
 
 ---
