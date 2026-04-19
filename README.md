@@ -47,7 +47,9 @@ Kendi günlük kullanımım için özel olarak geliştiriyorum.
 GNU General Public License v3.0
 
 ---
+All Contributors
 
-— *CureDevs*
+*CureDevs*
+— *DexedCure*
 
 </div>
